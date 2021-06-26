@@ -19,7 +19,8 @@ function createTableEntry(book) {
     entry.innerHTML = '<td>' + book.title + '</td>' +
         '<td>' + book.author + '</td>' +
         '<td>' + book.pages + '</td>' + 
-        '<td>' + book.read + '</td>';
+        '<td>' + book.read + '</td>', +
+        '<td><button class="removeEntry">Remove</button></td>';
     libraryTableBody.appendChild(entry);
 }
 
@@ -34,7 +35,10 @@ newBookButton.addEventListener('click', () => {
     let author = prompt('Enter the author', '');
     let pages = prompt('Enter the number of pages', '');
     let read = prompt('Have you read this yet?', '');
-    let newBook = Book(title, author, pages, read);
+    console.log(title)
+    const newBook = new Book(title, author, pages, read);
     addBookToLibrary(newBook);
     createTableEntry(newBook);
 })
+
+displayLibrary();
