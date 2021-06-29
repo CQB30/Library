@@ -19,7 +19,7 @@ function createTableEntry(book) {
     entry.innerHTML = '<td>' + book.title + '</td>' +
         '<td>' + book.author + '</td>' +
         '<td>' + book.pages + '</td>' + 
-        '<td>' + book.read + '</td>', +
+        '<td>' + book.read + '</td>' +
         '<td><button class="removeEntry">Remove</button></td>';
     libraryTableBody.appendChild(entry);
 }
