@@ -1,0 +1,16 @@
+
+
+.bookCard { 
+    display: flex;
+    flex-direction: column;
+    max-width: 10vw;
+}
+
+.readSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.bookInfo {
+    font-weight: bold;
+}
